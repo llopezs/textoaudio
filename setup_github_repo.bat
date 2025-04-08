@@ -17,7 +17,7 @@ echo.
 set /p GITHUB_USERNAME=Enter your GitHub username: 
 set /p REPO_NAME=Enter the repository name (default: textotoaudio): 
 
-if "%REPO_NAME%"=="" set REPO_NAME=textotoaudio
+if "%REPO_NAME%"=="" set REPO_NAME=textoaudio
 
 echo.
 echo IMPORTANT: Your Personal Access Token will be used for GitHub authentication.
@@ -51,7 +51,7 @@ git remote add origin https://%GITHUB_USERNAME%:%GITHUB_PAT%@github.com/%GITHUB_
 
 echo.
 echo Pushing to GitHub...
-git push -u origin master
+git push -u origin main
 
 if %ERRORLEVEL% EQU 0 (
     echo.
